@@ -16,6 +16,7 @@
     padding:0;
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -35,12 +36,12 @@ nav{
     position:fixed;
     top:0;
     z-index:1000;
-    background:rgba(0,0,0,0.7);
+    background:rgba(0,0,0,0.75);
     backdrop-filter:blur(10px);
 }
 
 .logo{
-    font-size:28px;
+    font-size:30px;
     font-weight:700;
     color:#d4af37;
 }
@@ -55,6 +56,7 @@ nav ul li a{
     text-decoration:none;
     color:white;
     transition:.3s;
+    font-weight:500;
 }
 
 nav ul li a:hover{
@@ -73,6 +75,7 @@ nav ul li a:hover{
     background:
     linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
     url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop');
+
     background-size:cover;
     background-position:center;
 }
@@ -88,6 +91,7 @@ nav ul li a:hover{
     max-width:850px;
     margin:auto;
     line-height:1.8;
+    color:#ddd;
 }
 
 .btn{
@@ -169,6 +173,7 @@ section{
     width:500px;
     max-width:100%;
     border-radius:20px;
+    box-shadow:0 0 30px rgba(212,175,55,.3);
 }
 
 /* GALERÍA */
@@ -182,12 +187,39 @@ section{
 
 .gallery img{
     width:100%;
+    height:300px;
+    object-fit:cover;
     border-radius:15px;
     transition:.4s;
+    border:1px solid rgba(212,175,55,.2);
 }
 
 .gallery img:hover{
     transform:scale(1.04);
+    box-shadow:0 0 25px rgba(212,175,55,.3);
+}
+
+/* PDF */
+
+.pdf-box{
+    margin-top:50px;
+    background:#111;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(212,175,55,.25);
+}
+
+.pdf-box h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+iframe{
+    width:100%;
+    height:600px;
+    border:none;
+    border-radius:15px;
+    margin-top:20px;
 }
 
 /* FOOTER */
@@ -217,6 +249,10 @@ nav ul{
 
 .title{
     font-size:34px;
+}
+
+iframe{
+    height:450px;
 }
 
 }
@@ -284,17 +320,23 @@ Fundada en Riohacha, La Guajira, nuestra misión es ofrecer exclusividad, autent
 
 <div class="card">
 <h3>Calidad Premium</h3>
-<p>Ofrecer accesorios de lujo con estándares de calidad y autenticidad garantizada.</p>
+<p>
+Ofrecer accesorios de lujo con estándares de calidad y autenticidad garantizada.
+</p>
 </div>
 
 <div class="card">
 <h3>Innovación</h3>
-<p>Implementar tecnología moderna para mejorar la experiencia digital de los clientes.</p>
+<p>
+Implementar tecnología moderna para mejorar la experiencia digital de los clientes.
+</p>
 </div>
 
 <div class="card">
 <h3>Crecimiento</h3>
-<p>Expandir KP como una marca reconocida nacional e internacionalmente.</p>
+<p>
+Expandir KP como una marca reconocida nacional e internacionalmente.
+</p>
 </div>
 
 </div>
@@ -311,17 +353,23 @@ Fundada en Riohacha, La Guajira, nuestra misión es ofrecer exclusividad, autent
 
 <div class="card">
 <h3>Relojes de Lujo</h3>
-<p>Colecciones exclusivas con diseños elegantes y modernos.</p>
+<p>
+Colecciones exclusivas con diseños elegantes y modernos.
+</p>
 </div>
 
 <div class="card">
 <h3>Experiencia Digital</h3>
-<p>Sistema de compras online moderno, rápido y seguro.</p>
+<p>
+Sistema de compras online moderno, rápido y seguro.
+</p>
 </div>
 
 <div class="card">
 <h3>Autenticidad</h3>
-<p>Productos originales y confianza garantizada para nuestros clientes.</p>
+<p>
+Productos originales y confianza garantizada para nuestros clientes.
+</p>
 </div>
 
 </div>
@@ -341,8 +389,6 @@ Fundada en Riohacha, La Guajira, nuestra misión es ofrecer exclusividad, autent
 <p class="text">
 KP integra innovación y tecnología en el comercio moderno mediante plataformas digitales, diseño premium y estrategias futuristas para crear una identidad de lujo.
 </p>
-
-<br>
 
 <a href="https://kaleth77.github.io/kpreloj/index.html" class="btn">
 Explorar KP
@@ -366,17 +412,23 @@ Explorar KP
 
 <div class="card">
 <h3>Rolex</h3>
-<p>Inspiración en lujo, elegancia y prestigio mundial.</p>
+<p>
+Inspiración en lujo, elegancia y prestigio mundial.
+</p>
 </div>
 
 <div class="card">
 <h3>Apple</h3>
-<p>Inspiración en innovación y experiencia tecnológica premium.</p>
+<p>
+Inspiración en innovación y experiencia tecnológica premium.
+</p>
 </div>
 
 <div class="card">
 <h3>Tesla</h3>
-<p>Inspiración en visión futurista y desarrollo tecnológico.</p>
+<p>
+Inspiración en visión futurista y desarrollo tecnológico.
+</p>
 </div>
 
 </div>
@@ -390,16 +442,34 @@ Explorar KP
 <h2 class="title">Galería e Información</h2>
 
 <p class="text">
-Estatutos organizacionales, productos premium y esencia visual de KP.
+Conoce más sobre KP STORE, nuestros estatutos organizacionales y la identidad premium de nuestra marca.
 </p>
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop">
+<img src="reloj1.jpg">
 
-<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=1200&auto=format&fit=crop">
+<img src="reloj2.jpg">
 
-<img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1200&auto=format&fit=crop">
+<img src="kp_logo.png">
+
+</div>
+
+<!-- PDF -->
+
+<div class="pdf-box">
+
+<h3>📄 Estatutos Oficiales KP STORE</h3>
+
+<p class="text">
+Consulta directamente los estatutos organizacionales de KP STORE.
+</p>
+
+<iframe src="Estatutos_KP_STORE_v4(1).pdf"></iframe>
+
+<a href="Estatutos_KP_STORE_v4(1).pdf" download class="btn">
+Descargar PDF
+</a>
 
 </div>
 
